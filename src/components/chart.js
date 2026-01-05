@@ -35,11 +35,14 @@ class CHART {
         }
       }
 
+      const color = colors[index] || colors[index % colors.length] || "rgba(255, 255, 255, 0.8)";
+      const borderColor = color.includes("0.8") ? color.replace("0.8", "1") : color;
+
       datasets.push({
         label: isSimpleDay ? day : year,
         data: values,
-        backgroundColor: colors[index],
-        borderColor: colors[index].replace("0.8", "1"),
+        backgroundColor: color,
+        borderColor: borderColor,
         borderWidth: type.includes("Curve") ? 3 : 1,
         tension: 0.4,
         pointRadius: 0,
