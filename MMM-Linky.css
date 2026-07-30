@@ -1,13 +1,18 @@
 #MMM-Linky {
-  width: 350px;
+  width: 100%;
+  max-width: 700px;
   margin: 0 auto;
   overflow: hidden;
   word-wrap: break-word;
 }
 
+#MMM-Linky_Chart {
+  width: 100% !important;
+  height: 320px !important;
+}
+
 #MMM-Linky_Energie {
   text-align: left;
-  font-size: medium;
   max-width: 100%;
   word-wrap: break-word;
   line-height: 1.2;
@@ -29,7 +34,6 @@
 #MMM-Linky_Message {
   color: #fff;
   text-align: center;
-  font-size: medium;
   max-width: 100%;
   word-wrap: break-word;
   line-height: 1.2;
